@@ -8,3 +8,7 @@ Gallery of Tizen-compatible .NET C# SDKs
 3.
 
 
+---------------------
+
+[home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
+
