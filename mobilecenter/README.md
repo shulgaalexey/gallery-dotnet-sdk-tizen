@@ -75,3 +75,17 @@ git checkout Tizen/Preview
 ./SDK/MobileCenterAnalytics/Microsoft.Azure.Mobile.Analytics.Tizen/bin/Release/Microsoft.Azure.Mobile.Analytics.dll
 ```
 
+
+## 1. Create new Analytics App in the Mobile Center Portal
+
+The initial step of adding Analytics to your Tizen app requires you to create a new app on the Mobile Center Portal where you can get the App Secret. You will use it soon in initializing the entire Mobile Center API in your Tizen App.
+
+1. Head over to mobile.azure.com
+2. Sign up or log in and hit the blue button on the top right corner of the portal that says **Add new** and select **Add new app** from the dropdown menu
+3. Enter a name and an optional description for your app
+4. Select the **Tizen OS** and **Xamarin platform**
+5. Hit the button at the bottom right that says **Add new app**
+
+Once you have created an Analytics App, you can obtain its **App Secret** on the **Getting Started** or **Manage App** sections of the Mobile Center Portal.
+
+
