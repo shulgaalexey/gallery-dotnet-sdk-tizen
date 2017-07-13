@@ -13,7 +13,9 @@ What features do they use the most?
 In other words, did you consider adding Continuous Monitoring and Analytics into you Tizen Mobile App?
 Let’s see how we can do it.
 
+
 In this article we will show how to track Analytics of your Tizen Mobile App by using [Microsoft Visual Studio Mobile Center Analytics](https://docs.microsoft.com/en-us/mobile-center/analytics/), specifically tailored for Tizen App Developers by Tizen Platform Lab in partnership with Microsoft.
+
 
 *Note. By the end of 2017 Analytics service is available in Preview mode for Tizen, Android, iOS, React Native, UWP and Xamarin.*
 
@@ -27,6 +29,7 @@ Mobile App Analytics is a multi-modal statistical and technical data, registered
 ![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_1.png "Tracking Tizen Mobile App Analytics")
 
 All that data may be collected and visualized by different mobile app measurement tools and one of them, carefully tuned for Tizen, is Microsoft Visual Studio Mobile Center Analytics. The Mobile Center .NET SDK, integrated into your app, provides a set of C# APIs to send the Analytics directly to the Mobile Center Portal where it is visualized in figures and diagrams on the online dashboard. Following chapters demonstrate the usage of both API and Web Portal in a practical example.
+
 
 
 Prerequisites
@@ -47,6 +50,7 @@ The Mobile Center API requires privileges to use the Internet and onboard SQLite
 </privileges>
 ```
 
+
 For integrating the Mobile Center Analytics into your app it is enough to add few .NET references which include Mobile Center SDK and its dependencies, required for Internet and storage operations. Navigate to the **Project -> Manage NuGet Packages...** and add to your Tizen Mobile App the following nupkgs with specified versions.
 
 * Tizen.Applications, version 1.5.8
@@ -57,6 +61,7 @@ For integrating the Mobile Center Analytics into your app it is enough to add fe
 * SQLitePCLRaw.provider.sqlite3.netstandard11, version 1.1.2
 
 Note. Temporary the Tizen-compatible SDK is not available on the Nuget Gallery, so you can build it from the source codes.
+
 
 1. Clone the SDK to your computer from the GitHub [https://github.com/Microsoft/mobile-center-sdk-dotnet/tree/Tizen/Preview](https://github.com/Microsoft/mobile-center-sdk-dotnet/tree/Tizen/Preview) and switch to Tizen/Preview branch:
 
@@ -74,6 +79,7 @@ git checkout Tizen/Preview
 ./SDK/MobileCenter/Microsoft.Azure.Mobile.Tizen/bin/Release/Microsoft.Azure.Mobile.dll
 ./SDK/MobileCenterAnalytics/Microsoft.Azure.Mobile.Analytics.Tizen/bin/Release/Microsoft.Azure.Mobile.Analytics.dll
 ```
+
 
 
 ## 1. Create new Analytics App in the Mobile Center Portal
@@ -146,6 +152,8 @@ sdb shell dlogutil MC_TEST
 Now the Analytics tracking is completely integrated into your Tizen Mobile App and we are ready to build and deploy it on a target device or emulator.
 
 
+
+
 ## 3. Observe the Analytics on Mobile Center Portal
 
 Once you launched your Tizen Mobile App, the Analytics starts flowing to the Mobile Center immediately. By clicking on **Analytics** in the right side of the Mobile Center Portal you will open the **Overview** page, which provides general predefined key metrics about your app users’ population: their devices, their locations, activity and engagement. This will enable answers to questions such as:
@@ -164,16 +172,19 @@ Switching to **Events** page will present a table with an overview of the events
 
 ![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_3.png "Analytics Events page")
 
+
 While diving deeper and clicking on an event in the events table, you will access to a more detailed page, in which further information about event properties is provided.
 
 ![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_4.png "Analytics Event Details page")
 
 *Note. For better understanding of Events page visit* [https://docs.microsoft.com/en-us/mobile-center/analytics/event-metrics](https://docs.microsoft.com/en-us/mobile-center/analytics/event-metrics).
 
+
 The final page in the **Analytics** section is **Log Flow**. Here you can see your incoming activity in a raw format.
 
-
 ![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_5.png "Analytics Log Flow page")
+
+
 
 
 What we learned today?
@@ -184,6 +195,7 @@ You can collect and visualize valuable Analytics about your users’ population 
 Mobile Center Analytics SDK is tailored for Tizen and available on the GitHub.
 
 The Portal and SDK are in the Preview mode and free of charge. Give it a try and develop your Analytics strategy which serves the best your Tizen Mobile App, ignites innovations and brings benefits and new opportunities to you and your users.
+
 
 
 Reference
