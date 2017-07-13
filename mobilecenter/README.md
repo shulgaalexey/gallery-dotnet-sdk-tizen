@@ -145,3 +145,34 @@ sdb shell dlogutil MC_TEST
 
 Now the Analytics tracking is completely integrated into your Tizen Mobile App and we are ready to build and deploy it on a target device or emulator.
 
+
+## 3. Observe the Analytics on Mobile Center Portal
+
+Once you launched your Tizen Mobile App, the Analytics starts flowing to the Mobile Center immediately. By clicking on **Analytics** in the right side of the Mobile Center Portal you will open the **Overview** page, which provides general predefined key metrics about your app users’ population: their devices, their locations, activity and engagement. This will enable answers to questions such as:
+
+* Should I translate my app into a new language?
+* Are my users majoritarily on the lastest version?
+* What are the main devices used?
+* Can I remove support for that old OS version? and many more.
+
+![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_2.png "Analytics Overview page")
+
+*Note. For more details about Overview page refer to* [https://docs.microsoft.com/en-us/mobile-center/analytics/overview](https://docs.microsoft.com/en-us/mobile-center/analytics/overview).
+
+
+Switching to **Events** page will present a table with an overview of the events happening in your app. For each event you will see the number of users who have triggered an event during the selected period of time, change of that number in a course of app usage, total number of events triggered, dynamics of this number changing and many other indicators.
+
+![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_3.png "Analytics Events page")
+
+While diving deeper and clicking on an event in the events table, you will access to a more detailed page, in which further information about event properties is provided.
+
+![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_4.png "Analytics Event Details page")
+
+*Note. For better understanding of Events page visit* [https://docs.microsoft.com/en-us/mobile-center/analytics/event-metrics](https://docs.microsoft.com/en-us/mobile-center/analytics/event-metrics).
+
+The final page in the **Analytics** section is **Log Flow**. Here you can see your incoming activity in a raw format.
+
+
+![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_5.png "Analytics Log Flow page")
+
+
