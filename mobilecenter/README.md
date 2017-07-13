@@ -24,7 +24,7 @@ What is Mobile App Analytics?
 
 Mobile App Analytics is a multi-modal statistical and technical data, registered in the mobile app in the running time. It lets developers understand their end-user population, such as number of daily, weekly and monthly users, session duration, top devices, as well as usage patterns: the custom event tracking feature allows collecting rich behavioral insights.
 
-![alt text](https://github.com/shulgaalexey//gallery-dotnet-sdk-tizen/blob/raw/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_1.png "Tracking Tizen Mobile App Analytics")
+![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_1.png "Tracking Tizen Mobile App Analytics")
 
 All that data may be collected and visualized by different mobile app measurement tools and one of them, carefully tuned for Tizen, is Microsoft Visual Studio Mobile Center Analytics. The Mobile Center .NET SDK, integrated into your app, provides a set of C# APIs to send the Analytics directly to the Mobile Center Portal where it is visualized in figures and diagrams on the online dashboard. Following chapters demonstrate the usage of both API and Web Portal in a practical example.
 
