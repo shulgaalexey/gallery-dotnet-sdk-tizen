@@ -176,3 +176,23 @@ The final page in the **Analytics** section is **Log Flow**. Here you can see yo
 ![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/item/mobilecenter/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_5.png "Analytics Log Flow page")
 
 
+What we learned today?
+----------------------
+
+You can collect and visualize valuable Analytics about your users’ population and behavioral patterns by adding a couple of lines of code to your Tizen Xamarin Mobile App and integrating it with Mobile Center Portal.
+
+Mobile Center Analytics SDK is tailored for Tizen and available on the GitHub.
+
+The Portal and SDK are in the Preview mode and free of charge. Give it a try and develop your Analytics strategy which serves the best your Tizen Mobile App, ignites innovations and brings benefits and new opportunities to you and your users.
+
+
+Reference
+---------
+
+* Tizen Developer page: https://developer.tizen.org/
+* Mobile Center Portal: https://mobile.azure.com/apps
+* Mobile Center documentation: https://docs.microsoft.com/en-us/mobile-center/
+* Mobile Center SDK documentation: https://docs.microsoft.com/en-us/mobile-center/sdk/
+* Mobile Center SDK sources: https://github.com/Microsoft/mobile-center-sdk-dotnet/tree/Tizen/Preview
+* Sample application with Analytics tracking: https://github.com/shulgaalexey/calculator_tizen_xamarin
+
