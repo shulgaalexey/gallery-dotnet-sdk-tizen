@@ -2,7 +2,14 @@ Tracking Tizen Mobile App Analytics
 ===================================
 
 
-Do you want to know how many users launch you App daily, weekly, monthly? How long do the stay with you app on? Where are they coming from and which smartphones are they on? What features do they use the most?
+Do you want to know how many users launch you App daily, weekly, monthly?
+
+How long do the stay with you app on?
+
+Where are they coming from and which smartphones are they on?
+
+What features do they use the most?
+
 In other words, did you consider adding Continuous Monitoring and Analytics into you Tizen Mobile App?
 Let’s see how we can do it.
 
@@ -28,7 +35,7 @@ Prerequisites
 We assume that you already have basic knowledge in Tizen Xamarin App development. For basic information, see [https://developer.tizen.org/development/preview/getting-started](https://developer.tizen.org/development/preview/getting-started).
 
 Make sure that your project is set up in Visual Studio and you are targeting Tizen Mobile devices. The instructions how to install Visual Studio Tools for Tizen are found there:
-https://developer.tizen.org/development/tizen-.net-preview/getting-started/installing-visual-studio-tools-tizen.
+[https://developer.tizen.org/development/tizen-.net-preview/getting-started/installing-visual-studio-tools-tizen](https://developer.tizen.org/development/tizen-.net-preview/getting-started/installing-visual-studio-tools-tizen).
 
 
 The Mobile Center API requires privileges to use the Internet and onboard SQLite DB for offline data preservation, so you should add following privileges to your Tizen Mobile App manifest:
@@ -59,7 +66,7 @@ cd mobile-center-sdk-dotnet
 git checkout Tizen/Preview
 ```
 
-2.pen the MobileCenter-SDK-Build-Tizen.sln solution in Visual Studio and build it.
+2. Open the MobileCenter-SDK-Build-Tizen.sln solution in Visual Studio and build it.
 
 3. Add SDK libraries to your Tizen Mobile App. Navigate to the **Project -> Add Reference… -> Browse**, press **Browse** button and select following two dlls:
 
