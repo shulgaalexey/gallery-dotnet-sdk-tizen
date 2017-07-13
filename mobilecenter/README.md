@@ -89,3 +89,59 @@ The initial step of adding Analytics to your Tizen app requires you to create a 
 Once you have created an Analytics App, you can obtain its **App Secret** on the **Getting Started** or **Manage App** sections of the Mobile Center Portal.
 
 
+## 2. Integrate Analytics into your App
+
+Getting Analytics only requires you to initialize it with one line of code. Doing this will immediately get the data flowing to Analytics Service of Mobile Center Portal. The Overview page will represent your data, albeit minimal, within seconds of your app run and the Events page will show deep insight into your user base and user behavioral patterns. The programming tasks are following:
+
+1. Open your app main source file, such as ```HelloWorld.Tizen.cs```, and add ```start()``` call inside the ```OnCreate()``` method:
+
+```
+MobileCenter.Start("{Your App Secret}", typeof(Analytics));
+```
+
+Make sure to replace ```{Your App Secret}``` with the actual value for your application. (The App Secret can be found on the **Getting Started** page on the Mobile Center portal or through the **Manage App** button, as described in the previous chapter)
+
+The ```start()``` API can be used only once in the lifecycle of your pap – all other calls will log a warning to the console and only the modules included in the first call will be available.
+
+2. Add the appropriate namespaces before calling the API:
+
+```
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+```
+
+3. In order to track custom events you should use ```TrackEvent()``` method in any part of your app once you have started the API. Events measure the user's interaction with the content in the app and allow you to better understand your user's behavior. Deeper contextual information may be assigned with event properties.
+
+*Note, that there is a maximum of 256 characters supported per event name and 64 characters per event property name and event property value name.*
+
+```
+// Track the event of
+// Calculator App mode change from Simple to Scientific
+// on device orientation changed from Portrait to Landscape
+Analytics.TrackEvent("Mode Changed",
+   new Dictionary<string, string> { { "mode", "Scientific" } });
+```
+
+The clever feature of the Mobile Center SDK is storing Analytics in the onboard SQLite DB while offline. As soon as the Internet becomes available and the app is running, the data is being transferred automatically to the Mobile Center Portal.
+
+4. Trace different levels of logs to console with ```MobileCenterLog``` API:
+
+```
+// Configure log visibility level: emit all logs
+MobileCenter.LogLevel = LogLevel.Verbose;
+
+// Log the exception
+MobileCenterLog.Debug(MobileCenterLog.LogTag, $"{exc}")
+```
+
+Other useful values of verbosity are: ```None, Error, Warn``` and ```Debug``` and the corresponding logging APIs are: ```Error(), Warn()``` and ```Debug()```.
+The logs may be observed on the Tizen Sdb console by using the command:
+
+```
+sdb shell dlogutil MC_TEST
+```
+
+*Note. For even more information about API, refer to the detailed Mobile Center SDK documentation at* [https://docs.microsoft.com/en-us/mobile-center/sdk/](https://docs.microsoft.com/en-us/mobile-center/sdk/)
+
+Now the Analytics tracking is completely integrated into your Tizen Mobile App and we are ready to build and deploy it on a target device or emulator.
+
