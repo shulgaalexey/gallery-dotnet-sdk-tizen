@@ -47,8 +47,8 @@ For the instructions how to install Visual Studio Tools for Tizen, see [https://
 
 
 
-1. Create New CI Project
-------------------------
+## 1. Create New CI Project
+
 
 The initial step on the way to CI is creating a new project on your online page.
 You can always access to that page via a hyperlink https://{your account name}.visualstudio.com/_projects.
@@ -61,8 +61,8 @@ Now the project is created and we can look around, invite project members and co
 
 
 
-2. Set up source code repository
---------------------------------
+## 2. Set up source code repository
+
 
 There are several options to specify source code repository from which your Tizen App will be built.
 Assuming that you already have your app on the GitHub, you should follow up with the bottommost option which allows to **build code from an external repository**.
@@ -75,9 +75,8 @@ Of course you may choose other ways to link source code to build. Read more on T
 
 
 
+## 3. Create Build definition
 
-3. Create Build definition
---------------------------
 
 The Team Services allow multiple Build definitions, each of which is a queue of Build Tasks. Each Build Tasks is performing a simple step of the Build, for example, fetches dependencies, runs builder, signing the artifact or storing the result on a remote storage.
 
@@ -92,8 +91,8 @@ For our case it is recommended to choose **.NET Desktop** template.
 
 
 
-4. Setup Build queue
---------------------
+## 4. Setup Build queue
+
 
 The newly created .NET Desktop Build queue includes seven Build Tasks, however not all of them are required for Tizen App Build, so: select and remove VsTest and Publish symbols tasks.
 
@@ -150,8 +149,8 @@ Congratulations, The Build Queue is configured!
 
 
 
-5. Queue the Build
-------------------
+## 5. Queue the Build
+
 
 Now the Build definition is done so you can click **Save & queue** on the top right to start the build.
 
