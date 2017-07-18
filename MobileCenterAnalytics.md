@@ -198,6 +198,17 @@ The Portal and SDK are in the Preview mode and free of charge. Give it a try and
 
 
 
+
+What's next?
+------------
+
+Read about [Continuous Integration](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ContinuousIntegration.md) for your Tizen Xamarin App
+
+Check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) available for Tizen
+
+
+
+
 Reference
 ---------
 
