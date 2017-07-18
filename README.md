@@ -13,7 +13,7 @@ Read [Tracking Tizen Mobile App Analytics](https://github.com/shulgaalexey/galle
 **IBM Watson Conversation C# SDK** allows to communicate with an IBM Chat Bot from a Tizen Device.
 Developers who wish to create natural language conversation solutions i.e. chat bots that automatically answer user queries or requests, would find this article useful.
 
-Read [Communicating with an IBM Chat Bot from Tizen](https://www.youtube.com/watch?v=dQw4w9WgXcQ) (*coming soon*)
+Read [Communicating with an IBM Chat Bot from Tizen](https://github.com/siddarthkm/gallery-dotnet-sdk-tizen/blob/item/ibmwatsonconversation/IBMWatsonConversation.md) (*coming soon*)
 
 
 --------------------------------------
