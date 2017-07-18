@@ -174,7 +174,7 @@ Give it a try and develop your CI strategy which serves the best to your Tizen M
 What's next?
 ------------
 
-Read how you can integrate Mobile Analytics into your Tizen Xamarin App: [https://developer.tizen.org/development/tizen-.net-preview/visual-studio-tools-tizen/certificate-manager](https://developer.tizen.org/development/tizen-.net-preview/visual-studio-tools-tizen/certificate-manager)
+Read how you can integrate [Mobile Analytics](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/MobileCenterAnalytics.md) into your Tizen Xamarin App
 
 Check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) available for Tizen
 
