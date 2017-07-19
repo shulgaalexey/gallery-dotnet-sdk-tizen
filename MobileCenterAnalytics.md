@@ -218,4 +218,5 @@ Reference
 * Mobile Center SDK documentation: https://docs.microsoft.com/en-us/mobile-center/sdk/
 * Mobile Center SDK sources: https://github.com/Microsoft/mobile-center-sdk-dotnet/tree/Tizen/Preview
 * Sample application with Analytics tracking: https://github.com/shulgaalexey/calculator_tizen_xamarin
+* Slides of Mobile Center intro on Tizen Developer Conference 2017: https://www.slideshare.net/AlexeyShulga/03-02-tizen-app-development-with-visual-studio-mobile-center-and-team-services
 
