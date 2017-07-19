@@ -31,6 +31,7 @@ Basic Procedure
 ---------------
 
 There are two main steps involved in the whole process.
+
 1.	Setting up the chat bot using the Web UI
 
 2.	Creating the Client App using the C# SDK
@@ -62,9 +63,13 @@ Once you have fully configured the Watson Conversation service on the Cloud, it 
 1.	To query the bot from a Tizen device, we need to create a Tizen Xamarin Forms Application. Create either a Tizen Xamarin Forms Single or Portable Application. If you are not familiar with the creation of a Tizen Xamarin Forms Application, please refer [here](https://developer.tizen.org/development/preview/getting-started).
 
 2.	Once you create a Tizen Xamarin Forms Application in Visual Studio, add the following Nuget Packages to your project using either the Nuget Package Manager GUI or the Command Line Interface offered by Visual Studio:
+
     * IBM.WatsonDeveloperCloud : Version 1.1.0
+
     * IBM.WatsonDeveloperCloud.Conversation.v1 : Version 1.1.0
+
     * Newtonsoft.Json : Version 9.0.1
+
     * Wdc.System.Net.Http.Formatting.NetStandard : Version 1.0.0
 
     *(Note: The SDK is under development by IBM. So the package versions may be updated frequently and the API signatures could change)*
@@ -122,6 +127,7 @@ References:
 * IBM Watson HomePage: [https://www.ibm.com/watson/](https://www.ibm.com/watson/)
 
 * IBM BlueMix DashBoard: [https://console.ng.bluemix.net/](https://console.ng.bluemix.net/)
+
 * IBM Watson Conversation Service HomePage: [https://www.ibmwatsonconversation.com](https://www.ibmwatsonconversation.com)
 
 * IBM Watson Conversation C# SDK: [https://github.com/watson-developer-cloud/dotnet-standard-sdk/tree/development/src/IBM.WatsonDeveloperCloud.Conversation.v1](https://github.com/watson-developer-cloud/dotnet-standard-sdk/tree/development/src/IBM.WatsonDeveloperCloud.Conversation.v1)
