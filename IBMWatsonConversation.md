@@ -82,7 +82,7 @@ Once you have fully configured the Watson Conversation service on the Cloud, it 
 
     *(Note: The SDK is under development by IBM. So the package versions may be updated frequently and the API signatures could change)*
 
-    ![Nuget Packages image](watson/pics/tizen-app-nuget-packages.png "Nuget Package Manager UI showing the Packages to be installed")
+    ![Nuget Packages image](watson/pics/tizen-app-nuget-packages.PNG "Nuget Package Manager UI showing the Packages to be installed")
 
 3.	Also add the Tizen Internet Privilege to the tizen-manifest.xml file of your application:
 
@@ -92,7 +92,7 @@ Once you have fully configured the Watson Conversation service on the Cloud, it 
         </privileges>
     ```
 
-    ![Tizen Manifest Image](watson/pics/tizen-manifest.png "Tizen Manifest file showing the Tizen Privilege to be added")
+    ![Tizen Manifest Image](watson/pics/tizen-manifest.PNG "Tizen Manifest file showing the Tizen Privilege to be added")
 
 
 You can now start using the SDK to query the Watson Bot from your Tizen Device.
