@@ -48,11 +48,19 @@ Configuring the Cloud side of the ChatBot requires the following steps:
 
 3.	Obtain the credentials for the conversation service (username and password). There credentials can be obtained from the page of the service you just created. They are required in the client SDK for authentication
 
-4.	Go to [ibmwatsonconversation.com](http://www.ibmwatsonconversation.com/). This is the homepage for the IBM Watson Conversation service. Login with your BlueMix credentials
+![Credentials Image](watson/pics/bluemix-credentials-view.png "Page of the Conversation Service in the BlueMix portal showing the Service Credentials")
+
+4.	Go to [ibmwatsonconversation.com](http://www.ibmwatsonconversation.com/). This is the homepage for the IBM Watson Conversation service. Login with your BlueMix credentials. You will be presented with the Conversation Dashboard
+
+![Conversation Dashboard Image](watson/pics/conversation-dashboard.png "IBM Watson Conversation Dashboard Page showing your current workspaces")
 
 5.	Create a workspace for your bot. Your conversation dashboard can have multiple workspaces. Each workspace contains a bot definition.
 
-6.	Configure the intents, entities and dialogs for your bot. (see IBM documentation)
+6.	Configure the intents, entities and dialogs for your bot. For more information on creation of Bot using the Conversation Service, please refer to IBM documentation and blogs.
+
+    *(Note: We do not delve deep into the creation of the bot as the main purpose of the article is to demonstrate that you can build Tizen Apps to communicate with an IBM Bot)*
+
+![Conversation Dialog Image](watson/pics/conversation-dialog-view.png "The Dialog page of the Conversation Bot showing the Dialog Tree")
 
 
 Creating the Client App:
