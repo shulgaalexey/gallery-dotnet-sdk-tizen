@@ -48,11 +48,11 @@ Configuring the Cloud side of the ChatBot requires the following steps:
 
 3.	Obtain the credentials for the conversation service (username and password). There credentials can be obtained from the page of the service you just created. They are required in the client SDK for authentication
 
-![Credentials Image](watson/pics/bluemix-credentials-view.png "Page of the Conversation Service in the BlueMix portal showing the Service Credentials")
+    ![Credentials Image](watson/pics/bluemix-credentials-view.png "Page of the Conversation Service in the BlueMix portal showing the Service Credentials")
 
 4.	Go to [ibmwatsonconversation.com](http://www.ibmwatsonconversation.com/). This is the homepage for the IBM Watson Conversation service. Login with your BlueMix credentials. You will be presented with the Conversation Dashboard
 
-![Conversation Dashboard Image](watson/pics/conversation-dashboard.png "IBM Watson Conversation Dashboard Page showing your current workspaces")
+    ![Conversation Dashboard Image](watson/pics/conversation-dashboard.png "IBM Watson Conversation Dashboard Page showing your current workspaces")
 
 5.	Create a workspace for your bot. Your conversation dashboard can have multiple workspaces. Each workspace contains a bot definition.
 
@@ -60,7 +60,7 @@ Configuring the Cloud side of the ChatBot requires the following steps:
 
     *(Note: We do not delve deep into the creation of the bot as the main purpose of the article is to demonstrate that you can build Tizen Apps to communicate with an IBM Bot)*
 
-![Conversation Dialog Image](watson/pics/conversation-dialog-view.png "The Dialog page of the Conversation Bot showing the Dialog Tree")
+    ![Conversation Dialog Image](watson/pics/conversation-dialog-view.png "The Dialog page of the Conversation Bot showing the Dialog Tree")
 
 
 Creating the Client App:
@@ -82,13 +82,18 @@ Once you have fully configured the Watson Conversation service on the Cloud, it 
 
     *(Note: The SDK is under development by IBM. So the package versions may be updated frequently and the API signatures could change)*
 
+    ![Nuget Packages image](watson/pics/tizen-app-nuget-packages.png "Nuget Package Manager UI showing the Packages to be installed")
+
 3.	Also add the Tizen Internet Privilege to the tizen-manifest.xml file of your application:
 
-```xml
+    ```xml
         <privileges>
             <privilege>http://tizen.org/privilege/internet</privilege>
         </privileges>
-```
+    ```
+
+    ![Tizen Manifest Image](watson/pics/tizen-manifest.png "Tizen Manifest file showing the Tizen Privilege to be added")
+
 
 You can now start using the SDK to query the Watson Bot from your Tizen Device.
 
