@@ -3,6 +3,10 @@ Tizen App Continuous Integration
 
 
 
+*by [@shulgaalexey](https://github.com/shulgaalexey)*
+
+
+
 Do you want to build your Tizen Apps faster, and deliver it to your customers immediately right after a new feature is submitted to your GitHub repo?
 
 Do you want to run your build routines on the remote servers and collect your TPKs on the online permanent storage?
