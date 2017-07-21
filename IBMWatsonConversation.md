@@ -121,7 +121,7 @@ string[] output = result.Output.Text;
 Explanation:
 ------------
 
-First, we create a **```ConversationService```** instance using the username and password we obtained when creating the conversation service on the IBM BlueMix portal. Then we create a **```MessageRequest```** object that has our input text **```“HelloWorld”```**. We then use the **```ConversatoinService.Message()```** method to query the Bot. The output is a list of string replies that can be obtained from the result of the query.
+First, we create a **```ConversationService```** instance using the username and password we obtained when creating the conversation service on the IBM BlueMix portal. Then we create a **```MessageRequest```** object that has our input text **```“HelloWorld”```**. We then use the **```ConversationService.Message()```** method to query the Bot. The output is a list of string replies that can be obtained from the result of the query.
 
 For more information on the SDK sources and usage, refer [here](https://github.com/watson-developer-cloud/dotnet-standard-sdk/tree/development/src/IBM.WatsonDeveloperCloud.Conversation.v1).
 
