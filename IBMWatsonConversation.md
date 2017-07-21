@@ -2,7 +2,7 @@ Communicating with an IBM Chat Bot from Tizen
 =============================================
 
 
-[*by @siddarthkm*](https://github.com/siddarthkm)
+*by [@siddarthkm](https://github.com/siddarthkm)*
 
 
 
