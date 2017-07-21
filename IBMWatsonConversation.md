@@ -1,6 +1,8 @@
 Communicating with an IBM Chat Bot from Tizen
 =============================================
 
+*by siddarthkm*
+
 This article is about how to use the [IBM Watson Conversation](https://www.ibm.com/watson/developercloud/conversation.html) C# SDK to communicate with an IBM Chat Bot from a Tizen Device. Developers who wish to create natural language conversation solutions i.e. chat bots that automatically answer user queries or requests, would find this article useful.
 
 IBM Watson Conversation Service is developed by IBM. IBM offers instructions on the whole process of Bot creation to usage. This article just introduces the IBM Watson Conversation Service and discusses the possibility of implementing it in Tizen.
