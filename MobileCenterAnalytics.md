@@ -1,6 +1,8 @@
 Tracking Tizen Mobile App Analytics
 ===================================
 
+by @shulgaalexey
+
 
 Do you want to know how many users launch you App daily, weekly, monthly?
 
