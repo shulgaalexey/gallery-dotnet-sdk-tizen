@@ -6,6 +6,9 @@ Tracking Tizen Mobile App Analytics
 *by [@shulgaalexey](https://github.com/shulgaalexey)*
 
 
+**Update** Now Mobile Center SDK is available on both Tizne Mobile and TV, Devices and Emulators.
+
+
 
 Do you want to know how many users launch you App daily, weekly, monthly?
 
