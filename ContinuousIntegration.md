@@ -34,7 +34,7 @@ How to get started?
 To start working with Continuous Integration on Team Services you should create a Visual Studio account, which will include all your projects. One way of doing it is to navigate to [https://www.visualstudio.com/team-services/](https://www.visualstudio.com/team-services/) and press the blue button which says **Get started for free**.
 Select a good memorable name for your account and continue.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_1.png "Analytics Overview page")
+![Creating account](ci/pics/Tizen_CI_1.png "Creating account")
 
 Another preparation step for Tizen Mobile App Developers is installing Tizen Signing Tool, which will be needed to prepare a signed TPK binary.
 Go to [Visual Studio Marketplace](https://marketplace.visualstudio.com/), search for Tizen Signing Tool, install it and get this extension available in all your projects.
@@ -58,7 +58,7 @@ The initial step on the way to CI is creating a new project on your online page.
 You can always access to that page via a hyperlink https://{your account name}.visualstudio.com/_projects.
 Press a blue button **New Project** on the top right, specify your project parameters and hit **Create**.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_2.png "Analytics Overview page")
+![Creating new project](ci/pics/Tizen_CI_2.png "Creating new project")
 
 Now the project is created and we can look around, invite project members and configure a dashboard.
 
@@ -72,7 +72,7 @@ There are several options to specify source code repository from which your Tize
 Assuming that you already have your app on the GitHub, you should follow up with the bottommost option which allows to **build code from an external repository**.
 Press **Setup Build** and switch to new build configuration form.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_3.png "Analytics Overview page")
+![Setting up source code repository](ci/pics/Tizen_CI_3.png "Setting up source code repository")
 
 Of course you may choose other ways to link source code to build. Read more on Team Services [documentation page](https://www.visualstudio.com/en-us/docs/git/create-new-repo).
 
@@ -90,7 +90,7 @@ To simplify Build configuration, the Team Services provide many predefined templ
 
 For our case it is recommended to choose **.NET Desktop** template.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_4.png "Analytics Overview page")
+![Creating Build definition](ci/pics/Tizen_CI_4.png "Creating Build definition")
 
 
 
@@ -100,7 +100,7 @@ For our case it is recommended to choose **.NET Desktop** template.
 
 The newly created .NET Desktop Build queue includes seven Build Tasks, however not all of them are required for Tizen App Build, so: select and remove VsTest and Publish symbols tasks.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_5.png "Analytics Overview page")
+![Setting up Build queue](ci/pics/Tizen_CI_5.png "Setting up Build queue")
 
 A pair of remaining tasks requires some configuration.
 
@@ -122,7 +122,7 @@ Your app may be signed automatically if you add Tizen Signing Tool to the Build 
 Click **+Add Task** button below the Build queue and type Tizen in the search box on the top right.
 Select Tizen Signing Tool task and click **Add**.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_6.png "Analytics Overview page")
+![Adding Tizen Signing task](ci/pics/Tizen_CI_6.png "Adding Tizen Signing")
 
 Make sure that the Signing task follows after the Build solution task. If it is not so, simply drag it with mouse.
 
@@ -145,7 +145,7 @@ Add a new task Azure File Copy to the end of the Build queue and configure follo
 * **Container Name**. Type a name for a container, for example, “ci_demo”
 * **Blob Prefix** (optional). You can specify here $(Build.BuildNumber) variable so each of your artifact will be stored in a dedicated folder
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_7.png "Analytics Overview page")
+![Adding Azure Blob Storage Task](ci/pics/Tizen_CI_7.png "Adding Azure Blob Storage Task")
 
 Congratulations, The Build Queue is configured!
 
@@ -158,7 +158,7 @@ Congratulations, The Build Queue is configured!
 
 Now the Build definition is done so you can click **Save & queue** on the top right to start the build.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ci/pics/Tizen_CI_8.png "Analytics Overview page")
+![Queueing the Build](ci/pics/Tizen_CI_8.png "Queueing the Build")
 
 The system will ask you to confirm the build once again by pressing another **Build** button in the dialog.
 
