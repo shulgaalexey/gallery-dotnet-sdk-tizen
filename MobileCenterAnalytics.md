@@ -38,7 +38,7 @@ What is Mobile App Analytics?
 
 Mobile App Analytics is a multi-modal statistical and technical data, registered in the mobile app in the running time. It lets developers understand their end-user population, such as number of daily, weekly and monthly users, session duration, top devices, as well as usage patterns: the custom event tracking feature allows collecting rich behavioral insights.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_1.png "Tracking Tizen Mobile App Analytics")
+![Tracking Tizen Mobile App Analytics](mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_1.png "Tracking Tizen Mobile App Analytics")
 
 All that data may be collected and visualized by different mobile app measurement tools and one of them, carefully tuned for Tizen, is Microsoft Visual Studio Mobile Center Analytics. The Mobile Center .NET SDK, integrated into your app, provides a set of C# APIs to send the Analytics directly to the Mobile Center Portal where it is visualized in figures and diagrams on the online dashboard. Following chapters demonstrate the usage of both API and Web Portal in a practical example.
 
@@ -175,26 +175,26 @@ Once you launched your Tizen Mobile App, the Analytics starts flowing to the Mob
 * What are the main devices used?
 * Can I remove support for that old OS version? and many more.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_2.png "Analytics Overview page")
+![Analytics Overview page](mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_2.png "Analytics Overview page")
 
 *Note. For more details about Overview page refer to* [https://docs.microsoft.com/en-us/mobile-center/analytics/overview](https://docs.microsoft.com/en-us/mobile-center/analytics/overview).
 
 
 Switching to **Events** page will present a table with an overview of the events happening in your app. For each event you will see the number of users who have triggered an event during the selected period of time, change of that number in a course of app usage, total number of events triggered, dynamics of this number changing and many other indicators.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_3.png "Analytics Events page")
+![Analytics Events page](mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_3.png "Analytics Events page")
 
 
 While diving deeper and clicking on an event in the events table, you will access to a more detailed page, in which further information about event properties is provided.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_4.png "Analytics Event Details page")
+![Analytics Event Details page](mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_4.png "Analytics Event Details page")
 
 *Note. For better understanding of Events page visit* [https://docs.microsoft.com/en-us/mobile-center/analytics/event-metrics](https://docs.microsoft.com/en-us/mobile-center/analytics/event-metrics).
 
 
 The final page in the **Analytics** section is **Log Flow**. Here you can see your incoming activity in a raw format.
 
-![alt text](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_5.png "Analytics Log Flow page")
+![Analytics Log Flow page](mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_5.png "Analytics Log Flow page")
 
 
 
