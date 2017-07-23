@@ -24,6 +24,16 @@ Read [Communicating with an IBM Chat Bot from Tizen](IBMWatsonConversation.md)
 Read [Tizen App Continuous Integration](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/ContinuousIntegration.md)
 
 
+--------------------------------------
+
+
+**Microsoft LUIS (Language Understanding Intelligent Service)** allows you to integrate Microsoft's Speech Intelligence into your Tizen Xamarin App. In this article you will find a simple solution based on an Azure Web App running a Bot which uses LUIS to find responses on your Natural Speech questions. We'll show step-by-step how to create a Tizen Mobile chat app, connect it with Web App and link all parts together. 
+
+
+Read [Microsoft Speech Intelligence on Tizen](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+
+
 ---------------------
 
 [home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
