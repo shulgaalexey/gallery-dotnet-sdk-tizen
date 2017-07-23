@@ -28,7 +28,7 @@ Examples of such services include:
 
 * Visual Recognition Service, etc...
 
-You can find the full list of service over [here](https://www.ibm.com/watson/developercloud/services-catalog.html). The Conversation service listed above is used for Chat Bot creation. 
+You can find the full list of service over [here](https://www.ibm.com/watson/developercloud/services-catalog.html). The Conversation service listed above is used for Chat Bot creation.
 
 
 
@@ -133,7 +133,7 @@ For more information on the SDK sources and usage, refer [here](https://github.c
 What we learnt today?
 ---------------------
 
-IBM Watson Conversation service can be used to create Simple Chat Bots for customer service/ other uses. Using the C# SDK for the IBM Watson Conversation Service, the Chat Bot can be queried from a Tizen Device. 
+IBM Watson Conversation service can be used to create Simple Chat Bots for customer service/ other uses. Using the C# SDK for the IBM Watson Conversation Service, the Chat Bot can be queried from a Tizen Device.
 
 For bots where you need to query an external server for data to send to the user, we need to use a web app that does it for us. We will deal with web apps in a future article.
 
