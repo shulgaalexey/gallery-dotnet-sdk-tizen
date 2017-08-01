@@ -187,20 +187,17 @@ Set your TDD project as an executable in the solution by right clicking on it an
 
 In a moment you should see the app with a test report, including test case overall results, all test results and failed only test.
 
-
-![Analytics Events page](mobilecenter/pics/Tracking_Tizen_Mobile_App_Analytics_3.png "Analytics Events page")
-
-![Overall results](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_01.png "Overall results")
+<img src="tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_01.png" width="300" alt="Overall results">
 
 **Overall results**
 
 
-![All tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_02.png "All tests")
+<img src="tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_02.png" width="300" alt="All results">
 
 **All tests**
 
 
-![Failed tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_03.png "Failed tests")
+<img src="tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_03.png" width="300" alt="Failed tests">
 
 **Failed tests**
 
