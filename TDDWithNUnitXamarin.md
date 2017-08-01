@@ -188,17 +188,17 @@ Set your TDD project as an executable in the solution by right clicking on it an
 In a moment you should see the app with a test report, including test case overall results, all test results and failed only test.
 
 
-![Overall results](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_01 "Overall results")
+![Overall results](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_01.png "Overall results")
 
 *Overall results*
 
 
-![All tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_02 "All tests")
+![All tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_02.png "All tests")
 
 **All tests**
 
 
-![Failed tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_03 "Failed tests")
+![Failed tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_03.png "Failed tests")
 
 **Failed tests**
 
