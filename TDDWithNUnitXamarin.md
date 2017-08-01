@@ -39,20 +39,23 @@ The sequence of steps in TDD is generally as following:
  - Repeat
 
 
-![A graphical representation of the test-driven development lifecycle](https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png)
+![A graphical representation of the test-driven development lifecycle](https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png "A graphical representation of the test-driven development lifecycle")
+
+**A graphical representation of the test-driven development lifecycle.** [Picture source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png)
+
 
 
 The TDD improves the quality and readability of your code, make it self documented and increase the overall productivity of the entire development process.
 
 The proven approach declares that the test case life cycle should include phases of setup, execution, validation and cleanup.
 
-Best practices recommend to separate set-up and teardown routines, common for a group of test cases.
+Best practices recommend to separate set-up and tear-down routines, common for a group of test cases.
 
 You should always start unit test from a known and pre-configured state.
 
-The ultimate target of the unit test is to ensure that the results and behaviour of the tested entitiy are correct.
+The ultimate target of the unit test is to ensure that the results and behaviour of the tested entity are correct.
 
-On the other hand it is important to avoid complicated test cases ([KISS principle](https://en.wikipedia.org/wiki/KISS_principle)), test cases with inerdependencies (execution of one test shouldn't be interfered by another), "all-knowing oracles", slow running tests, and other "anti-patterns".
+On the other hand it is important to avoid complicated test cases ([KISS principle](https://en.wikipedia.org/wiki/KISS_principle)), test cases with interdependencies (execution of one test shouldn't be interfered by another), "all-knowing oracles", slow running tests, and other "anti-patterns".
 
 
 ## How to get started?
@@ -184,13 +187,25 @@ Set your TDD project as an executable in the solution by right clicking on it an
 
 In a moment you should see the app with a test report, including test case overall results, all test results and failed only test.
 
-TODO: screenshot
+
+![Overall results](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_01 "Overall results")
+
+*Overall results*
+
+
+![All tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_02 "All tests")
+
+**All tests**
+
+
+![Failed tests](tddwithxamarinnunit/pics/tdd_with_nunit_xamarin_03 "Failed tests")
+
+**Failed tests**
 
 
 
 
-
-
+TODO: write about XML report
 
 
 
@@ -200,24 +215,31 @@ TODO: screenshot
 
 ## What we learned today?
 
-You can and, very likely, should develop your Tizen Mobile or TV App in a TDD manner.
+You can and, for sure, should develop your Tizen Mobile or TV App in a TDD manner.
 
-We propose to use nunit.xamarin SDK which offers testing capcities of popular NUnit Framework together with GUI and XML reporting features.
+We propose to use nunit.xamarin SDK which offers testing capcities of popular NUnit Framework represented on a GUI and in XML reports.
 
-Tizen .NET and Tizen Xamarin Mobile and TV Apps are in the Preview mode and you can try it free of charge.
-Give it a try and develop your own well tested world class apps.
+Tizen .NET and Tizen Xamarin Mobile and TV Apps are currently in the Preview mode and you can try it completely free of charge.
+
+Give it a try and develop your own well tested world class Tizen apps.
+
 
 
 ## What's next?
 
-The TDD allows you to develop and maintain well tested apps.
-However on the next phase of your app life cycle, when it is shipped to you users yom may instrument it with continuous monitoring tools.
+The TDD allows you to develop and maintain perfect apps.
+
+However on the next phase of your app life cycle, when it is shipped to you users, yom may instrument it further with continuous monitoring tools.
+
 Read how you can integrate [Mobile Analytics](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/MobileCenterAnalytics.md) into your Tizen Xamarin App
 
-Study how can you set up Continuous Integration of your Tizen App Development Process
-TODO: add link
 
-Check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) available for Tizen
+To make your Tizen app development and delivery smooth, you may design your process based on Continuous Integration technique.
+
+Study how can you set up CI for Tizen [here](ContinuousIntegration.md).
+
+
+And finally, check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) available for Tizen
 
 
 
@@ -226,15 +248,9 @@ Check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/galle
 
 
 * Tizen Developer page: [https://developer.tizen.org/](https://developer.tizen.org/)
-* Sample application used for TDD demonstration: TODO link
-* TODO nunit.xamarin for Tizen GitHub
-* TODO ninut.xamarin for Tizen MyGet
-* TODO NUnit home page
+* Sample application demonstrating nunit.xamarin and TDD: [https://github.com/shulgaalexey/HelloTizenTDD](https://github.com/shulgaalexey/HelloTizenTDD)
+* The nunit.xamarin for Tizen on the GitHub: [https://github.com/shulgaalexey/nunit.xamarin/tree/Tizen/Preview](https://github.com/shulgaalexey/nunit.xamarin/tree/Tizen/Preview)
+* The ninut.xamarin.tizen nupkg on the MyGet: TODO add link
+* NUnit home page: [http://nunit.org/](http://nunit.org/)
 * [TDD on Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
-
-
-
-
-
-
 
