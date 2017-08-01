@@ -9,11 +9,11 @@ TDD for Tizen App with NUnit Xamarin SDK
 
 Are you developing Tizen Xamarin App and looking for a TDD framework?
 
-Do you use NUnit TDD solutions on other mobile platforms and planning to integrate it on Tizen too?
+Are you using NUnit TDD solutions on other mobile platforms and planning to integrate it on Tizen too?
 
 Are you studying TDD for the very first time?
 
-Read this step-by-step guide where you will find a detailed instructions on how to use nunit.xamarin test framework which is a cross-platform SDK with GUI and XML report generation features.
+Read this step-by-step guide where you will find a detailed instructions on how to use nunit.xamarin test framework which offers a cross-platform SDK with GUI and XML report generation features.
 
 For the comprehensive NUnit feature coverage, please, visit the [project site](http://nunit.org/).
 
@@ -25,18 +25,19 @@ For the comprehensive NUnit feature coverage, please, visit the [project site](h
 
 ## What is TDD?
 
-[Test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is a software development process that relies on the repetition of a very short development cycle: Requirements are turned into very specific test cases, then the software is improved to pass the new tests, only.
-This test-first programming technique, created by [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) is opposed to software development that allows software to be added that is not proven to meet requirements.
+[Test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only.
+
+This "test-first" programming technique, created by [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck), is opposed to software development that allows to add software that is not proven to meet requirements.
 
 
 The sequence of steps in TDD is generally as following:
 
- - Add a test
- - Run all tests and see if the new one fails
- - Write some code
- - Run tests
- - Refactor code
- - Repeat
+ 1. Add a test
+ 2. Run all tests and see if the new one fails
+ 3. Write some code
+ 4. Run tests
+ 5. Refactor code
+ 6. Repeat
 
 
 ![A graphical representation of the test-driven development lifecycle](https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png "A graphical representation of the test-driven development lifecycle")
@@ -47,8 +48,9 @@ The sequence of steps in TDD is generally as following:
 
 The TDD improves the quality and readability of your code, make it self documented and increase the overall productivity of the entire development process.
 
-The proven approach declares that the test case life cycle should include phases of setup, execution, validation and cleanup.
+The proven approach declares that you should prepare a collection of test cases, covering all or almost all of your app functionality. 
 
+Each test case life cycle should include phases of setup, execution, validation and cleanup.
 Best practices recommend to separate set-up and tear-down routines, common for a group of test cases.
 
 You should always start unit test from a known and pre-configured state.
