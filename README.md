@@ -33,6 +33,14 @@ Read [Tizen App Continuous Integration](ContinuousIntegration.md)
 Read [Microsoft Speech Intelligence on Tizen](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 
+--------------------------------------
+
+
+**NUnit Xamarin C# SDK** offers popular [NUnit unit testig suite](http://nunit.org/) and provides GUI and XML reports. In this article you will study how to use this SDK in Tizen Mobile and TV Xamarin Apps. We'll present step-by-step instructions how to integrate NUnit Xamarin in your Tizen app, create test cases and review test results. 
+
+
+Read [TDD for Tizen App with NUnit Xamarin SDK](TDDWithNUnitXamarin.md)
+
 
 ---------------------
 
