@@ -111,7 +111,7 @@ Double click in the **Solution Explorer** the program file of newly created app 
                 //TcpWriterParameters = new TcpWriterInfo("192.168.0.108", 13000),
 
                 // Creates a NUnit Xml result file on the host file system using PCLStorage library.
-                CreateXmlResultFile = false,
+                CreateXmlResultFile = true,
 
                 // Choose a different path for the xml result file
                 // ResultFilePath = System.IO.Path.Combine(Windows.Storage.ApplicationData.Current.TemporaryFolder.Path, "Nunit", "Results.xml")
@@ -183,7 +183,8 @@ Read more about validation API and test case annotations on the NUnit [project s
 
 ## 3. Checking test report: GUI and XML
 
-Running tests require either Tizen Emulator of Target Device. Both TV and Mobile should work fine.
+
+Running tests require either Tizen Emulator or Target Device. Both TV and Mobile should work fine.
 
 Set your TDD project as an executable in the solution by right clicking on it and selecting **Set as Startup Project**, attach the device to the USB or launch the Emulator (**Tools -> Tizen -> Tizen Emulator Manager**) and press **F5**.
 
@@ -204,11 +205,29 @@ In a moment you should see the app with a test report, including test case overa
 **Failed tests**
 
 
+In order to check the XML report, navigate to your app folder on the device and access the ```Results.xml``` file in the ```./Data``` sub-folder.
+
+Another way of getting the report is to pull it directly to your computer.
+Open Tizen Sdb Console (**Tools -> Tizen -> Tizen Sdb Command Prompt**) and enter either of following instructions.
 
 
-TODO: write about XML report
+For Ubuntu:
+```
+>sdb pull /opt/usr/home/owner/apps_rw/{your_app_name}/data/TestResults.xml ~/{folder_on_your_pc}/
+```
+
+For Ubuntu on Windows:
+```
+>sdb pull /opt/usr/home/owner/apps_rw/{your_app_name}/data/TestResults.xml /mnt/c/{folder_on_your_pc}/
+```
 
 
+For Windows:
+```
+>sdb pull /opt/usr/home/owner/apps_rw/{your_app_name}/data/TestResults.xml c:\{folder_on_your_pc}\
+```
+
+Now you can open the XML file, saved on your computer, and review your unit testing report.
 
 
 
