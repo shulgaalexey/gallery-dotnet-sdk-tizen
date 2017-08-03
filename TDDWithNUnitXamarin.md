@@ -137,6 +137,11 @@ sdb shell dlogutil NUNIT
 
 
 
+### You are the Boss of Continuous Integration
+
+If you are establishing your Tizen App Development Process on the base of [Continuous Integration](ContinuousIntegration.md), you will find useful integrating nunit.xamarin SDK via nupkg from the MyGet.
+Configure nupkg repository source ```https://tizen.myget.org/F/nunit/api/v2``` and add the package ```nuget.xamarin.tizen``` version 3.6.1 or later.
+
 
 
 ### Code ninja way
@@ -159,12 +164,8 @@ git checkout Tizen/Preview
 ./src/runner/nunit.runner.Tizen/bin/Release/nunit.runner.Tizen.dll
 ```
 
+TODO: build PCLStorage for Tizen as well
 
-
-### You are the Boss of Continuous Integration
-
-If you are establishing your Tizen App Development Process on the base of [Continuous Integration](ContinuousIntegration.md), you will find useful integrating nunit.xamarin SDK via nupkg from the MyGet.
-Configure nupkg repository source ```https:\\todo``` and add the package ```nuget.xamarin.tizen``` version 3.7.0 or later.
 
 
 
