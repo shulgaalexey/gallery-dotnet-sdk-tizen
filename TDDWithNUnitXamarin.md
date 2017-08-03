@@ -73,7 +73,7 @@ For the instructions how to install Visual Studio Tools for Tizen, see [https://
 ## 1. Integrating nunit.xamarin in your project
 
 
-### You own nunit.xamarin Tizen GUI
+### Your own nunit.xamarin Tizen GUI
 
 To integrate nunit.xamarin test suite in your project you should add a new Tizen Xamarin App.
 
