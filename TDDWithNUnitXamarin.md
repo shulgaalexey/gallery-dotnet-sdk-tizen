@@ -146,7 +146,7 @@ Configure nupkg repository source ```https://tizen.myget.org/F/nunit/api/v2``` a
 
 ### Code ninja way
 
-Get the full controll of your dependencies. Building nunit.xamarin SDK out of source codes and integrate it in your project with following three simple steps:
+Get the full controll of your dependencies. Build nunit.xamarin SDK out of source codes and integrate it in your project with following three simple steps:
 
 1. Clone the SDK to your computer from the GitHub [https://github.com/shulgaalexey/nunit.xamarin](https://github.com/shulgaalexey/nunit.xamarin) and switch to Tizen/Preview branch:
 
@@ -165,6 +165,9 @@ git checkout Tizen/Preview
 ```
 
 TODO: build PCLStorage for Tizen as well
+
+
+*Note, that PCLStorage SKD was ported to Tizen by [@PawelAndruszkiewicz](https://github.com/PawelAndruszkiewicz)*
 
 
 
