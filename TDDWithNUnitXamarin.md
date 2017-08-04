@@ -139,8 +139,9 @@ sdb shell dlogutil NUNIT
 
 ### You are the Boss of Continuous Integration
 
-If you are establishing your Tizen App Development Process on the base of [Continuous Integration](ContinuousIntegration.md), you will find useful integrating nunit.xamarin SDK via nupkg from the MyGet.
+If you are establishing your Tizen App Development Process on the base of [Continuous Integration](ContinuousIntegration.md), you will find useful adding nunit.xamarin and PCLStorage SDKs via nupkg from the MyGet.
 Configure nupkg repository source ```https://tizen.myget.org/F/nunit/api/v2``` and add the package ```nuget.xamarin.tizen``` version 3.6.1 or later.
+Similarly for PCLStorage, configure a source ```https://tizen.myget.org/F/pclstorage/api/v2``` and add the package ```PCLStorage``` version 1.0.1 or later.
 
 
 
@@ -151,12 +152,12 @@ Get the full controll of your dependencies. Build nunit.xamarin SDK out of sourc
 1. Clone the SDK to your computer from the GitHub [https://github.com/shulgaalexey/nunit.xamarin](https://github.com/shulgaalexey/nunit.xamarin) and switch to Tizen/Preview branch:
 
 ```
-git clone https://github.com/shulgaalexey/nunit.xamarin
+git clone https://github.com/shulgaalexey/nunit.xamarin.git
 cd nunit.xamarin
 git checkout Tizen/Preview
 ```
 
-2. Open the nunit.runner.sln.sln solution in Visual Studio and build nunit.runner.Tizen project in the Runner folder.
+2. Open the nunit.runner.sln solution in Visual Studio and build nunit.runner.Tizen project in the Runner folder.
 
 3. Add SDK library to your Tizen Xamarin App. Navigate to the **Project -> Add Reference… -> Browse**, press **Browse** button and select following two dlls:
 
@@ -164,7 +165,25 @@ git checkout Tizen/Preview
 ./src/runner/nunit.runner.Tizen/bin/Release/nunit.runner.Tizen.dll
 ```
 
-TODO: build PCLStorage for Tizen as well
+Build the PCLStorage for Tizen similarly.
+
+1. Clone the SDK to your computer from the GitHub [https://github.com/shulgaalexey/PCLStorage.git](https://github.com/shulgaalexey/PCLStorage.git) and switch to Tizen/Preview branch:
+
+```
+git clone https://github.com/shulgaalexey/PCLStorage.git
+cd PCLStorage
+git checkout Tizen/Preview
+```
+
+2. Open the PCLStorage.sln solution in Visual Studio and build PCLStorage.NoSL and then PCLStorage.Tizen projects.
+
+3. Add SDK library to your Tizen Xamarin App. Navigate to the **Project -> Add Reference… -> Browse**, press **Browse** button and select following two dlls:
+
+```
+./src/PCLStorage.Tizen/bin/Release/PCLStorage.Abstractions.dll
+./src/PCLStorage.Tizen/bin/Release/PCLStorage.dll
+```
+
 
 
 *Note, that PCLStorage SKD was ported to Tizen by [@PawelAndruszkiewicz](https://github.com/PawelAndruszkiewicz)*
@@ -274,7 +293,7 @@ And finally, check out the [Gallery of 3rd Party C# API](https://shulgaalexey.gi
 * Tizen Developer page: [https://developer.tizen.org/](https://developer.tizen.org/)
 * Sample application demonstrating nunit.xamarin and TDD: [https://github.com/shulgaalexey/HelloTizenTDD](https://github.com/shulgaalexey/HelloTizenTDD)
 * The nunit.xamarin for Tizen on the GitHub: [https://github.com/shulgaalexey/nunit.xamarin/tree/Tizen/Preview](https://github.com/shulgaalexey/nunit.xamarin/tree/Tizen/Preview)
-* The ninut.xamarin.tizen nupkg on the MyGet: TODO add link
+* The [ninut.xamarin.tizen](https://tizen.myget.org/feed/Packages/nunit) and [PCLStorage](https://tizen.myget.org/feed/Packages/pclstorage) nupkg on the MyGet: 
 * NUnit home page: [http://nunit.org/](http://nunit.org/)
 * [TDD on Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 
