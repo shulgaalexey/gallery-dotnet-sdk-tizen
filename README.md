@@ -44,5 +44,13 @@ Read [TDD for Tizen App with NUnit Xamarin SDK](TDDWithNUnitXamarin.md)
 
 ---------------------
 
+## What's next?
+
+* PCLStorage
+* Microsoft LUIS
+* ...
+
+---------------------
+
 [home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
 
