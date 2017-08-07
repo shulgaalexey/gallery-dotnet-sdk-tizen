@@ -66,3 +66,4 @@ Read [TDD for Tizen App with NUnit Xamarin SDK](TDDWithNUnitXamarin.md)
 
 [home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
 
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)
