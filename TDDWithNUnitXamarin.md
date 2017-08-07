@@ -9,11 +9,11 @@ TDD for Tizen App with NUnit Xamarin SDK
 
 Are you developing Tizen Xamarin App and looking for a TDD framework?
 
-Are you using NUnit TDD solutions on other mobile platforms and planning to integrate it on Tizen too?
+Are you using NUnit TDD solutions on the other mobile platforms and planning to integrate it on Tizen too?
 
 Are you studying TDD for the very first time?
 
-Read this step-by-step guide where you will find a detailed instructions on how to use nunit.xamarin test framework which offers a cross-platform SDK with GUI and XML report generation features.
+Read this step-by-step guide where you will find detailed instructions on how to use nunit.xamarin test framework which offers a cross-platform SDK with GUI and XML report generation features.
 
 For the comprehensive NUnit feature coverage, please, visit the [project site](http://nunit.org/).
 
@@ -48,16 +48,17 @@ The sequence of steps in TDD is generally as following:
 
 The TDD improves the quality and readability of your code, make it self documented and increase the overall productivity of the entire development process.
 
-The proven approach declares that you should prepare a collection of test cases, covering all or almost all of your app functionality. 
-
-Each test case life cycle should include phases of setup, execution, validation and cleanup.
+Following the TDD you should prepare a collection of test cases, covering all or almost all of your app functionality. 
+Each test case should have a life cycle including phases of setup, execution, validation and cleanup.
 Best practices recommend to separate set-up and tear-down routines, common for a group of test cases.
 
-You should always start unit test from a known and pre-configured state.
+Few more advises to master your TDD are following:
 
-The ultimate target of the unit test is to ensure that the results and behaviour of the tested entity are correct.
+ * You should always start unit test from a known and pre-configured state.
+ * The ultimate target of the unit test is to ensure that the results and behaviour of the tested entity are correct.
+ * On the other hand it is important to avoid complicated test cases ([KISS principle](https://en.wikipedia.org/wiki/KISS_principle)), test cases with interdependencies (execution of one test shouldn't be interfered by another), "all-knowing oracles", slow running tests, and other "anti-patterns".
 
-On the other hand it is important to avoid complicated test cases ([KISS principle](https://en.wikipedia.org/wiki/KISS_principle)), test cases with interdependencies (execution of one test shouldn't be interfered by another), "all-knowing oracles", slow running tests, and other "anti-patterns".
+Now you are ready to start using the TDD in your Tizen Xamarin projects.
 
 
 ## How to get started?
@@ -144,15 +145,14 @@ There are at least two ways to doing it.
 
 If you are establishing your Tizen App Development Process on the base of [Continuous Integration](ContinuousIntegration.md), you will find useful adding nunit.xamarin and PCLStorage nupkg from the MyGet.
 
-Configure nupkg repository source ```https://tizen.myget.org/F/nunit/api/v2``` and add the package ```nuget.xamarin.tizen``` version 3.6.1 or later.
-
-Similarly for PCLStorage, configure a source ```https://tizen.myget.org/F/pclstorage/api/v2``` and add the package ```PCLStorage``` version 1.0.1 or later.
+1. Configure nupkg repository source ```https://tizen.myget.org/F/nunit/api/v2``` and add the package ```nuget.xamarin.tizen``` version 3.6.1 or later.
+2. Similarly for PCLStorage, configure a source ```https://tizen.myget.org/F/pclstorage/api/v2``` and add the package ```PCLStorage``` version 1.0.1 or later.
 
 
 
 ### Code ninja way
 
-Get the full controll of your dependencies. Build nunit.xamarin SDK out of source codes and integrate it in your project with following three simple steps:
+Get the full controll over your dependencies. Build nunit.xamarin SDK out of source codes and integrate it in your project with following three simple steps:
 
 1. Clone the SDK to your computer from the GitHub [https://github.com/shulgaalexey/nunit.xamarin](https://github.com/shulgaalexey/nunit.xamarin) and switch to Tizen/Preview branch:
 
@@ -164,7 +164,7 @@ git checkout Tizen/Preview
 
 2. Open the nunit.runner.sln solution in Visual Studio and build nunit.runner.Tizen project in the Runner folder.
 
-3. Add SDK library to your Tizen Xamarin App. Navigate to the **Project -> Add Reference… -> Browse**, press **Browse** button and select following two dlls:
+3. Add SDK library to your Tizen Xamarin App. Navigate to the **Project -> Add Reference… -> Browse**, press **Browse** button and select following dll:
 
 ```
 ./src/runner/nunit.runner.Tizen/bin/Release/nunit.runner.Tizen.dll
@@ -180,7 +180,7 @@ cd PCLStorage
 git checkout Tizen/Preview
 ```
 
-2. Open the PCLStorage.sln solution in Visual Studio and build PCLStorage.NoSL and then PCLStorage.Tizen projects.
+2. Open the PCLStorage.sln solution in Visual Studio and build PCLStorage.Tizen project.
 
 3. Add SDK library to your Tizen Xamarin App. Navigate to the **Project -> Add Reference… -> Browse**, press **Browse** button and select following two dlls:
 
@@ -190,16 +190,15 @@ git checkout Tizen/Preview
 ```
 
 
+*Note. Many thanks to [@PawelAndruszkiewicz](https://github.com/PawelAndruszkiewicz) who ported PCLStorage SDK to Tizen*
 
-*Note, that PCLStorage SKD was ported to Tizen by [@PawelAndruszkiewicz](https://github.com/PawelAndruszkiewicz)*
 
+Now all dependencies are set up and we can create test cases.
 
 
 
 ## 2. Preparing test cases
 
-
-To add new test cases follow the recommendations on the NUnit [project site](http://nunit.org/).
 
 In the IDE navigate to the **Project -> Add New Item... -> Test -> NUnit**, specify test class name and press **Add** button.
 
@@ -263,11 +262,11 @@ Now you can open the XML file, saved on your computer, and review your unit test
 
 ## What we learned today?
 
-You can and, for sure, should develop your Tizen Mobile or TV App in a TDD manner.
+You can and, for sure, should develop your Tizen Mobile and TV Apps in a TDD manner.
 
 We propose to use nunit.xamarin SDK which offers testing capcities of popular NUnit Framework represented on a GUI and in XML reports.
 
-Tizen .NET and Tizen Xamarin Mobile and TV Apps are currently in the Preview mode and you can try it completely free of charge.
+Tizen .NET and Tizen Xamarin Mobile and TV SDKs are currently in the Preview mode and you can try it completely free of charge.
 
 Give it a try and develop your own well tested world class Tizen apps.
 
@@ -277,17 +276,15 @@ Give it a try and develop your own well tested world class Tizen apps.
 
 The TDD allows you to develop and maintain perfect apps.
 
-However on the next phase of your app life cycle, when it is shipped to you users, yom may instrument it further with continuous monitoring tools.
-
+However on the next phase of your app life cycle, when it is shipped to you users, you may instrument it further with continuous monitoring tools.
 Read how you can integrate [Mobile Analytics](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/blob/master/MobileCenterAnalytics.md) into your Tizen Xamarin App
 
 
 To make your Tizen app development and delivery smooth, you may design your process based on Continuous Integration technique.
-
 Study how can you set up CI for Tizen [here](ContinuousIntegration.md).
 
 
-And finally, check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) available for Tizen
+And finally, check out the [Gallery of 3rd Party C# API](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) available for Tizen to discover even more useful APIs and SDKs to apply in your exsiting projects.
 
 
 
@@ -298,6 +295,7 @@ And finally, check out the [Gallery of 3rd Party C# API](https://shulgaalexey.gi
 * Tizen Developer page: [https://developer.tizen.org/](https://developer.tizen.org/)
 * Sample application demonstrating nunit.xamarin and TDD: [https://github.com/shulgaalexey/HelloTizenTDD](https://github.com/shulgaalexey/HelloTizenTDD)
 * The nunit.xamarin for Tizen on the GitHub: [https://github.com/shulgaalexey/nunit.xamarin/tree/Tizen/Preview](https://github.com/shulgaalexey/nunit.xamarin/tree/Tizen/Preview)
+* The PCLStorage for Tizen on the GitHub: [https://github.com/shulgaalexey/PCLStorage/tree/Tizen/Preview](https://github.com/shulgaalexey/PCLStorage/tree/Tizen/Preview)
 * The [ninut.xamarin.tizen](https://tizen.myget.org/feed/Packages/nunit) and [PCLStorage](https://tizen.myget.org/feed/Packages/pclstorage) nupkg on the MyGet: 
 * NUnit home page: [http://nunit.org/](http://nunit.org/)
 * [TDD on Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
