@@ -7,7 +7,8 @@ Any critics/edits/contributions/requests would be highly appreciated.
 
 Feel free to [raise an issue](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new) and follow [me](https://github.com/shulgaalexey/) on the GitHub.
 
-Thanks
+Regards,
+@shulgaalexey
 
 
 
