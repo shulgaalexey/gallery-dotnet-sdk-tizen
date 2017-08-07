@@ -300,3 +300,10 @@ And finally, check out the [Gallery of 3rd Party C# API](https://shulgaalexey.gi
 * NUnit home page: [http://nunit.org/](http://nunit.org/)
 * [TDD on Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 
+
+---------------------
+
+
+[home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
+
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)

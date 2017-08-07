@@ -13,5 +13,7 @@ Thanks
 
 ---------------------
 
+
 [home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
 
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)

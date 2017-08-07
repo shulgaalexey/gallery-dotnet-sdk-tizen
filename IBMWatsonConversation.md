@@ -151,3 +151,11 @@ References:
 * IBM Watson Conversation C# SDK: [https://github.com/watson-developer-cloud/dotnet-standard-sdk/tree/development/src/IBM.WatsonDeveloperCloud.Conversation.v1](https://github.com/watson-developer-cloud/dotnet-standard-sdk/tree/development/src/IBM.WatsonDeveloperCloud.Conversation.v1)
 
 
+
+
+---------------------
+
+
+[home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
+
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)
