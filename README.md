@@ -8,6 +8,9 @@ Gallery of Tizen-compatible .NET C# SDKs
 
 [READ FIRST](ReadFirst.md)
 
+<a href="https://developer.tizen.org/development/tizen-.net-preview/introduction">
+<img src="https://developer.tizen.org/sites/default/files/images/tizen_dotnet_preview4_1089x318.png" alt="Tizen .NET Preview 4 is available now">
+</a>
 
 
 --------------------------------------
