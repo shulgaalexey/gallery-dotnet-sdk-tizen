@@ -10,9 +10,7 @@ Feel free to [raise an issue](https://github.com/shulgaalexey/gallery-dotnet-sdk
 
 Regards,
 
-*[@shulgaalexey](https://github.com/shulgaalexey)*
-
-*by [@siddarthkm](https://github.com/siddarthkm)*
+*[@shulgaalexey](https://github.com/shulgaalexey)*, *[@siddarthkm](https://github.com/siddarthkm)*
 
 
 
