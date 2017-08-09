@@ -232,3 +232,12 @@ Reference
 * Sample application with Analytics tracking: https://github.com/shulgaalexey/calculator_tizen_xamarin
 * Slides of Mobile Center intro on Tizen Developer Conference 2017: https://www.slideshare.net/AlexeyShulga/03-02-tizen-app-development-with-visual-studio-mobile-center-and-team-services
 
+
+
+
+---------------------
+
+
+[home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
+
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)
