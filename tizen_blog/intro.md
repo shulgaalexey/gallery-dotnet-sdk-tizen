@@ -39,8 +39,12 @@ unfortunately, Tizen app developers are not an exception.
 <table style="width:100%" align="left" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td>
+		<p>
 			The lightweight Gallery, organized as a vintage Web 1.0-ish blog, comprises Tizen-ready C# APIs and corresponding developer tutorials, framed as short stories.
-			Being powered by the GitHub, the block allows to watch, fork, comment (by raising the issues), modify and extend the articles.
+		</p>
+		<p>
+			Being powered by the GitHub, the blog allows to watch, fork, comment (by raising the issues), modify and extend the articles.
+		</p>
 		</td>
 		<td style="width:150px"><a href="https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen"><img alt="GitHub" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" width="120" /></a>
 	</tr>
@@ -59,13 +63,14 @@ unfortunately, Tizen app developers are not an exception.
 </table>
 
 
-Both Tizen .NET and the Gallery content are in the Preview mode and completely free of charge, so don't hesitate and give it a try!
+### Both Tizen .NET and the Gallery content are in the Preview mode and completely free of charge, so don't hesitate and give it a try!
 	
 
 
 Have you learned anything new?
 
 Do you think something important is missing?
+
 Check out the [Gallery](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/) and let us know in the comments!
 
 
