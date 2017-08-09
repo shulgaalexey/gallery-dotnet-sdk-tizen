@@ -241,3 +241,11 @@ References
 * Houndify API Reference: [https://docs.houndify.com/reference](https://docs.houndify.com/reference)
 
 * Houndify C# SDK: [https://www.houndify.com/sdks#CSharp](https://www.houndify.com/sdks#CSharp)
+
+
+---------------------
+
+
+[home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
+
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)
