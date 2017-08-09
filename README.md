@@ -44,7 +44,7 @@ Read [Tracking Tizen Mobile App Analytics](MobileCenterAnalytics.md) for step-by
 
 **SoundHound Houndify C# SDK** allows developers to create voice activated intelligent search applications utilizing the Houndify Platform offered by SoundHound. Houndify is an amalgam of multiple technologies, which are required for creating Voice enabled solutions, all in one place, packaged into an easy to use online dashboard and SDK. Developers can use Houndify to easily create Voice enabled assistants for their Tizen devices without much initial configuration, and without worrying about linking multiple components performing different tasks, unlike other services where you may need to setup one component for speech to text, one for natural language understanding, etc.
 
-Read [Communicating with an IBM Chat Bot from Tizen](IBMWatsonConversation.md)
+Read [Creating a Voice enabled search app for Tizen using Houndify](SoundHoundHoundify.md)
 
 
 --------------------------------------
