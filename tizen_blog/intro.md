@@ -1,6 +1,3 @@
-<html>
-<body text="#2d2d2d">
-
 	<p>
 	<b>Tizen</b>&nbsp;app development process got&nbsp;<a href="https://www.tizenexperts.com/2016/11/dev-c-getting-started-with-visual-studio-tools-tizen-preview/">more fun and productive</a>&nbsp;when the&nbsp;<a href="https://developer.tizen.org/development/tizen-.net-preview/introduction">Tizen .NET Developer Preview</a>&nbsp;was announced.
 	</p>
@@ -78,6 +75,3 @@
 	<p></p>
 	<p>Thanks,</p>
 	<p><a href="https://github.com/shulgaalexey">@shulgaalexey</a>,&nbsp;<a href="https://github.com/siddarthkm">@siddarthkm</a></p>
-
-</body>
-</html>
