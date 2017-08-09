@@ -104,31 +104,38 @@ Sample Code
 ### Creating the HoundRequester and the RequestInfo
 
 ```csharp
+// The HoundCloudRequester Class is used to make requests and receive responses from the Houndify Server
 HoundCloudRequester requester = new HoundCloudRequester(client_id, client_key, user_id);
 
 RequestInfoJSON.TypeClientVersion client_version =new RequestInfoJSON.TypeClientVersion();
 client_version.key = 0;
 client_version.choice0 = "1.0";
 
+// RequestInfoJSON class contains metadata about the current request, like session_id, request id, client_version, etc
 RequestInfoJSON request_info = new RequestInfoJSON();
 request_info.setUnitPreference(RequestInfoJSON.TypeUnitPreference.UnitPreference_US);
 request_info.setRequestID(Guid.NewGuid().ToString());
 request_info.setSessionID(session_id);
 request_info.setClientVersion(client_version);
 
+// ConversationStateJSON class is used to maintain the continuity in the conversation with the client
 ConversationStateJSON conversation_state = null;
+
+// The HoundServerJSON class is used to handle all server responses
 HoundServerJSON hound_result;
 ```
 
 ### Making a Text Request
 
 ```csharp
-hound_result = requester.do_text_request(text, conversation_state, request_info);
+// The request_text, conversation_state and request_info are passed as arguments
+hound_result = requester.do_text_request(request_text, conversation_state, request_info);
 ```
 
 ### Partial Request Handler for Audio Request
 
 ```csharp
+// HoundRequester.PartialHandler is implemented to handle partial transcripts of audio requests
 private class LocalPartialHandler : HoundRequester.PartialHandler
 {
     private bool show_transcript;
@@ -138,11 +145,12 @@ private class LocalPartialHandler : HoundRequester.PartialHandler
         show_transcript = init_show_transcript;
     }
 
+    // The handle method is called whenever a partial transcript is received by the client
     public override void handle(HoundPartialTranscriptJSON partial)
     {
         if (show_transcript)
        	{
-            //Handle Partial Audio Transcripts
+            // Handle Partial Audio Transcripts
         }
     }
 }
@@ -151,16 +159,20 @@ private class LocalPartialHandler : HoundRequester.PartialHandler
 ### Making an Audio Request
 
 ```csharp
+// Create a HoundRequester.VoiceRequest object
 HoundRequester.VoiceRequest request = requester.start_voice_request(conversation_state,
                                 request_info, new LocalPartialHandler(true));
 
+// The audio input is given as a byte array
 byte[] buffer = new byte[2052];
 
-while(voice_request_exists) // keep looping until the request is completed
+// Keep looping until the request is completed
+while(voice_request_exists) 
 {
     request.add_audio(count, buffer);
 }
 
+// Call finish() method to complete the audio request
 hound_result = request.finish();
 ```
 
@@ -197,18 +209,17 @@ if (commandResult.hasHTMLData())
 
     **Text Request:**
 
-    Making a text request is simple. Just call the HoundCloudRequester.do_text_request(), with the input text, conversation state and request_info as arguments
+    * Making a text request is simple. Just call the HoundCloudRequester.do_text_request(), with the input text, conversation state and request_info as arguments
 
     **Audio Request:**
     
-    Before making an audio request, you need to make and declare an instance of the HoundRequester.PartialHandler class. This is used for handling partial transcripts of the audio request you would send. You may choose to ignore the partial transcripts or process them however you like.
+    * Before making an audio request, you need to make and declare an instance of the HoundRequester.PartialHandler class. This is used for handling partial transcripts of the audio request you would send. You may choose to ignore the partial transcripts or process them however you like.
     
-    To make the audio request, you need to use the HoundRequester.start_voice_request() method to create a HoundRequest.VoiceRequest instance. You can then query the instance by sending your voice request into byte arrays. Once your request is completed, call the HoundRequester.VoiceRequest.finish() method to complete the voice request.
+    * To make the audio request, you need to use the HoundRequester.start_voice_request() method to create a HoundRequest.VoiceRequest instance. You can then query the instance by sending your voice request into byte arrays. Once your request is completed, call the HoundRequester.VoiceRequest.finish() method to complete the voice request.
 
 4.  You can get the CommandResultJSON object from the result of your request, by calling the HoundServerJSON.elementOfAllResults(). The CommandResult object contains the server response, which can be obtained by getWrittenResponseLong().
 
     In some cases, for example, when you query the weather, you also get special responses like HTML data, which would contain additional information. You can utilize extract them from the CommandResponse using methods like getSmallScreenHTML(), get smallScreenURL(), etc.
-
 
 What we learnt today?
 ---------------------
