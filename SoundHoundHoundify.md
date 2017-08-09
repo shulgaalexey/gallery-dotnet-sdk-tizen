@@ -29,6 +29,10 @@ Some example domains are:
 
 * Navigation, etc
 
+
+![Houndify Domains Image](hound/pics/houndify_domains.png "Image showing the Domains page of Houndify")
+
+
 To see the complete list of domains offered by Houndify, refer to [https://www.houndify.com/domains](https://www.houndify.com/domains)
 
 
@@ -47,7 +51,11 @@ On the dashboard page, you can see a section that displays the list of clients y
 
 Once you click the Add New Client button, you will be prompted to enter a name for client and the platform it is targeting. After that you will be asked to choose from a list of domains, the domains you want your client to support. Now you are done. You can start querying your client immediately without any additional configuration.
 
+![Houndify Dashboard Image](hound/pics/houndify_dashboard.png "Image showing the Houndify dashboard, clients and the 'Add Client' button")
+
 After you create your client, you will be directed to the dashboard page of your client. There, you will find the Client ID and Client Key. Make a note of these Credentials as they will be used by your app to authenticate itself while making requests.
+
+![Houndify Client Credential Image](hound/pics/houndify_api_credentials.png "Image showing the Client Credentials of your app")
 
 
 The Houndify C# SDK
@@ -72,8 +80,9 @@ Creating the Client App
 
 3.	Once you create the Xamarin Forms Application, you need to add the SDK source files to your Tizen application. To do that, right click on your project in the solution view and click on add existing Item. You do not need to add the SampleHoundDriver directory to the project.
 
-4.	Also add the Tizen Internet Privilege to the tizen-manifest.xml file of your application:
+    ![Houndify Tizen App Sources](hound/pics/houndify_tizen_app_sources.png "Image showing the Houndify SDK sources added to the Tizen App")
 
+4.	Also add the Tizen Internet Privilege to the tizen-manifest.xml file of your application:
 
     ```xml
         <privileges>
@@ -82,6 +91,8 @@ Creating the Client App
     ```
 
     *(Note: Other privileges like recorder/ media access may be required when you use those resources for making voice requests. Please refer to the [Tizen Website](https://www.tizen.org/privilege) to know more about privileges)*
+
+    ![Houndify Tizen App Manifest Image](hound/pics/houndify_tizen_manifest.png "Image showing the privileges added to Tizen Manifest file")
 
 You should now be able to make requests to the Houndify Server. The Houndify C# Slim SDK works out of the box in Tizen with .NET Core 2.0.
 
