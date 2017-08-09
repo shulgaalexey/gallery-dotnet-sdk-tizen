@@ -1,5 +1,9 @@
-Gallery of Tizen-compatible .NET C# SDKs
-========================================
+Creating Tizen Apps with modern .NET C# APIs
+============================================
+
+
+**This is a guest post by Alex Shulga and Siddarth KM**
+
 
 **Tizen** app development process got [more fun and productive](https://www.tizenexperts.com/2016/11/dev-c-getting-started-with-visual-studio-tools-tizen-preview/) when the
 [Tizen .NET Developer Preview](https://developer.tizen.org/development/tizen-.net-preview/introduction) was announced.
@@ -12,8 +16,8 @@ Gallery of Tizen-compatible .NET C# SDKs
 	</tr>
 </table>
 
-These pieces of software, the majority of which are distributed as the Open Source, will allow you to add needed features to your app quickly and smoothly.
-The programmer-oriented sets of SDKs will allow applying in your app development process some modern techniques, such as 
+These pieces of software, mainly distributed as the Open Source, will offer wide variety of useful features which can be quickly and smoothly integrated in your app via GUI of packet manager.
+The programmer-oriented sets of .NET SDKs will allow applying in your app development process some modern techniques, such as 
 [Test Driven Development (TDD)](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/TDDWithNUnitXamarin.html) and
 [Continuous Integration (CI)](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/IBMWatsonConversation.html).
 
@@ -36,14 +40,14 @@ unfortunately, Tizen app developers are not an exception.
 ----------------
 
 
+The lightweight Gallery, organized as a vintage Web 1.0-ish blog, comprisesi basic set of Tizen-ready 3rd Party C# APIs. Selected and ported by us to Tizen .NET, those APIs and SDKs are accompanied with developer tutorials, framed as short stories and helping you getting started with a particular package and Tizen .NET App development in common.
+
+
 <table style="width:100%" align="left" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td>
 		<p>
-			The lightweight Gallery, organized as a vintage Web 1.0-ish blog, comprises Tizen-ready C# APIs and corresponding developer tutorials, framed as short stories.
-		</p>
-		<p>
-			Being powered by the GitHub, the blog allows to watch, fork, comment (by raising the issues), modify and extend the articles.
+			Being powered by the GitHub, the blog allows to watch, fork, comment (by raising the issues), modify and extend (with Pull Requests) the articles.
 		</p>
 		</td>
 		<td style="width:150px"><a href="https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen"><img alt="GitHub" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" width="120" /></a>
@@ -80,3 +84,11 @@ Check out the [Gallery](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/
 Thanks,
 
 [@shulgaalexey](https://github.com/shulgaalexey), [@siddarthkm](https://github.com/siddarthkm)
+
+
+---------------------
+
+
+[home](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/)
+
+[comment](https://github.com/shulgaalexey/gallery-dotnet-sdk-tizen/issues/new)
