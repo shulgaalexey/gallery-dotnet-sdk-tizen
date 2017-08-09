@@ -108,7 +108,8 @@ Sample Code:
 -----------
 
 ```csharp
-ConversationService conversationService = new ConversationService("<username>", "<password>", ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
+ConversationService conversationService = new ConversationService("<username>", "<password>",
+            ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
 
 MessageRequest messageRequest = new MessageRequest()
 {
