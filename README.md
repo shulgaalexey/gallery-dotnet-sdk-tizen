@@ -1,5 +1,5 @@
-Gallery of Tizen-compatible .NET C# SDKs
-========================================
+Gallery of Tizen-compatible .NET C# API
+=======================================
 
 
 
