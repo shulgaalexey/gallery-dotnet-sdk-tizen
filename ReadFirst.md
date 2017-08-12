@@ -1,7 +1,7 @@
 Hello @username!
 ================
 
-This is an *experimental* *unoficial* *independent* gallery of 3rd Party C# APIs tailored for [Tizen](https://www.tizen.org/) .NET Mobile and TV.
+This is an *experimental* *unofficial* *independent* gallery of 3rd Party C# APIs tailored for [Tizen](https://www.tizen.org/) .NET Mobile and TV.
 
 Any critics/edits/contributions/requests would be highly appreciated.
 
