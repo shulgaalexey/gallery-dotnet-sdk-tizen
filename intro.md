@@ -17,7 +17,7 @@ Creating Tizen Apps with modern .NET C# APIs
 </table>
 
 These pieces of software, mainly distributed as the Open Source, will offer wide variety of useful features which can be quickly and smoothly integrated in your app via GUI of packet manager.
-The programmer-oriented sets of .NET SDKs will allow applying in your app development process some modern techniques, such as 
+The programmer-oriented sets of .NET SDKs will allow applying in your app development process some modern techniques, such as
 [Test Driven Development (TDD)](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/TDDWithNUnitXamarin.html) and
 [Continuous Integration (CI)](https://shulgaalexey.github.io/gallery-dotnet-sdk-tizen/IBMWatsonConversation.html).
 
@@ -40,7 +40,7 @@ unfortunately, Tizen app developers are not an exception.
 ----------------
 
 
-The lightweight Gallery, organized as a vintage Web 1.0-ish blog, comprisesi basic set of Tizen-ready 3rd Party C# APIs. Selected and ported by us to Tizen .NET, those APIs and SDKs are accompanied with developer tutorials, framed as short stories and helping you getting started with a particular package and Tizen .NET App development in common.
+The lightweight Gallery, organized as a vintage Web 1.0-ish blog, comprising a basic set of Tizen-ready 3rd Party C# APIs. Selected and ported by us to Tizen .NET, those APIs and SDKs are accompanied with developer tutorials, framed as short stories and helping you getting started with a particular package and Tizen .NET App development in common.
 
 
 <table style="width:100%" align="left" border="0" cellpadding="0" cellspacing="0">
@@ -68,7 +68,7 @@ The lightweight Gallery, organized as a vintage Web 1.0-ish blog, comprisesi bas
 
 
 ### Both Tizen .NET and the Gallery content are in the Preview mode and completely free of charge, so don't hesitate and give it a try!
-	
+
 
 
 Have you learned anything new?
