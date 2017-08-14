@@ -2,7 +2,7 @@ Creating Tizen Apps with modern .NET C# APIs
 ============================================
 
 
-**This is a guest post by Alex Shulga and Siddarth KM**
+**This is an introduction post by Alex Shulga and Siddarth KM**
 
 
 **Tizen** app development process got [more fun and productive](https://www.tizenexperts.com/2016/11/dev-c-getting-started-with-visual-studio-tools-tizen-preview/) when the
